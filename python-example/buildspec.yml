@@ -9,4 +9,4 @@ artifacts:
     - src/*
   discard-paths: yes
   base-directory: python-example
-
+  name: python-app-$(date +%Y-%m-%d-%H-%M-%S)
