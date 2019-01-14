@@ -2,5 +2,6 @@
 version: 0.0
 os: linux
 files:
-  - source: /src
+  - source: . 
     destination: /opt/python-app
+    exclude: appspec.yml
