@@ -1,19 +1,14 @@
 version: 0.2
-env:
-  variables:
-    CODEBUILD_SRC_DIR: "python-example"
 phases:
   install:
     commands:
-      - pip install -r requirements.txt
-      - pip install pycodestyle
+      - cd python-example && pip install -r requirements.txt && pip install pycodestyle
   build:
     commands:
-      - pycodestyle *.py
-      - python -m pytest
+      - cd python-example && pycodestyle *.py && python -m pytest
 artifacts:
   files:
     - src/*
   discard-paths: yes
-  #base-directory: python-example
+  base-directory: python-example
   name: python-app-$(date +%Y-%m-%d-%H-%M-%S).zip
