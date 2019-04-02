@@ -5,7 +5,7 @@ phases:
       - cd python-example && pip install -r requirements.txt && pip install pycodestyle
   build:
     commands:
-      - cd python-example && pycodestyle *.py && python -m pytest
+      - cd python-example && pycodestyle src/*.py && python -m pytest
 artifacts:
   files:
     - src/*
