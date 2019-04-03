@@ -17,3 +17,6 @@ phases:
 artifacts:
   files:
     - target/messageUtil-1.0.jar
+cache:
+  paths:
+    - '/root/.m2/**/*'
