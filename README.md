@@ -3,7 +3,7 @@
 This repository contains sample code (java and python) as well as scripts and CloudFormation templates that will help you get started with AWS CodeBuild.
 
 ## CodeBuild and GitHub
-The "connect_codebuild_to_github.sh" script at the root of the repository uses a personal access token for the GitHub user "codebuild-demo" in order to connect your AWS account with CodeBuild. The CodeBuild demo projects defined in the CloudFormation templates connect to this public repository, but the CodeBuild service has a requirement that you authenticate to GitHub, even when pulling down a public repository. 
+The "connect_codebuild_to_github.sh" script at the root of the repository uses a personal access token for the GitHub user "codebuild-demo" in order to connect your AWS account with CodeBuild. The CodeBuild demo projects defined in the CloudFormation templates connect to this public repository, but the CodeBuild service has a requirement that you authenticate to GitHub, even when pulling down a public repository. We are using this method because CloudFormation does NOT support adding GitHub credentials/connectivity to CodeBuild at this time. 
 
 The "github_creds.json" file contains the credentials.
 
