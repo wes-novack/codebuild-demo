@@ -18,7 +18,6 @@ Resources:
             Value: Value1
           - Name: VAR2
             Value: Value2
-            Type: PLAINTEXT
       Source:
         Type: GITHUB
         Auth:
@@ -27,6 +26,10 @@ Resources:
         BuildSpec: java-example/buildspec.yml
         Location: https://github.com/wes-novack/codebuild-demo
       TimeoutInMinutes: 5
+      Cache:
+        Type: LOCAL
+        Modes:
+          - LOCAL_CUSTOM_CACHE
   CodeBuildRole:
     Type: AWS::IAM::Role
     Properties:
