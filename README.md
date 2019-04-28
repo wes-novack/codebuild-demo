@@ -15,7 +15,7 @@ export AWS_DEFAULT_REGION=us-east-1
 ## Setting up
 You'll first need to install the AWS CLI. You should then run the "./connect_codebuild_to_github.sh" shell script, which will connect CodeBuild to GitHub for you.
 
-After that, you can run the CloudFormation templates contained in the "java-example" and "python-example" directories, in order to create CodeBuild build projects for each of those code types. You can upload these CloudFormation templates using the CloudFormation web console, or you can use the CLI.
+After that, you can run the CloudFormation templates contained in the programminglanguage-example directories, in order to create CodeBuild build projects for each of those code types. You can upload these CloudFormation templates using the CloudFormation web console, or you can use the CLI.
 Example: 
 aws cloudformation create-stack --stack-name codebuild-demo --template-body file://python-example/cloudformation_python_build_project.yml --capabilities CAPABILITY_NAMED_IAM
 
