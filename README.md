@@ -19,3 +19,5 @@ After that, you can run the CloudFormation templates contained in the programmin
 Example: 
 aws cloudformation create-stack --stack-name codebuild-demo --template-body file://python-example/cloudformation_python_build_project.yml --capabilities CAPABILITY_NAMED_IAM
 
+## Updates
+Adding this update to trigger a CodePipeline.
