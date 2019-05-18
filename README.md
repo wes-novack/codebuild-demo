@@ -20,4 +20,4 @@ Example:
 aws cloudformation create-stack --stack-name codebuild-demo --template-body file://python-example/cloudformation_python_build_project.yml --capabilities CAPABILITY_NAMED_IAM
 
 ## Updates
-An update to trigger an AWS CodePipeline execution.
+Trigger an AWS CodePipeline execution.
