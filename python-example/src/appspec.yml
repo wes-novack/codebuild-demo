@@ -2,6 +2,10 @@
 version: 0.0
 os: linux
 files:
-  - source: . 
+  - source: *.py 
     destination: /opt/python-app
-    exclude: appspec.yml
+hooks:
+  AfterInstall:
+    - location: touch_index_html.sh
+      timeout: 30
+      runas: root
