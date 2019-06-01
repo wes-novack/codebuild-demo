@@ -1,1 +1,1 @@
-touch /var/www/html/index.html
+echo "<h1>Globomantics</h1>" > /var/www/html/index.html
