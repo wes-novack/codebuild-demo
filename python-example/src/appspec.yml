@@ -6,4 +6,4 @@ files:
     destination: /opt/python-app
 hooks:
   BeforeInstall:
-    - location: codedeploy_scripts/before_install.sh
+    - location: ./codedeploy_scripts/before_install.sh
