@@ -12,7 +12,7 @@ phases:
       - python -m pytest
 artifacts:
   files:
-    - src/*
+    - src/**/*
   discard-paths: yes
   base-directory: python-example
   name: python-app-$(date +%Y-%m-%d-%H-%M-%S).zip
