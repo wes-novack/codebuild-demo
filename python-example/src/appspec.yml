@@ -5,7 +5,5 @@ files:
   - source: .
     destination: /opt/python-app
 hooks:
-  AfterInstall:
-    - location: touch_index_html.sh
-      timeout: 30
-      runas: root
+  BeforeInstall:
+    - location: codedeploy_scripts/before_install.sh
